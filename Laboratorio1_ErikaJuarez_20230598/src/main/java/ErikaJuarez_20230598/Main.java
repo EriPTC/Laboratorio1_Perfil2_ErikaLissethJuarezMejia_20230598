@@ -18,31 +18,29 @@ public class Main {
         System.out.println("Ingrese una opcion ");
         int menu = sc.nextInt();
 
-        switch (menu){
-            case 1 :
-                System.out.println("Ingresa el producto");
-                String clave = sc.next();
-                System.out.println("ingrese el precio");
-                double valor = sc.nextDouble();
-                tm.put(clave,valor);
-                System.out.println("producto ingresado: " +clave +", " +valor);
-                break;
-            case 2 :
-                System.out.println();
-                break;
-            case 3 :
-                System.out.println("l");
-                break;
-            case 4 :
-                System.out.println(tm);
-                break;
-            case 5 :
-                System.out.println("Hasta pronto");
-                break;
-        }
-
         do {
-
+            switch (menu){
+                case 1 :
+                    System.out.println("Ingresa el producto");
+                    String clave = sc.next();
+                    System.out.println("ingrese el precio");
+                    double valor = sc.nextDouble();
+                    tm.put(clave,valor);
+                    System.out.println("producto ingresado: " +clave +", " +valor);
+                    break;
+                case 2 :
+                    System.out.println();
+                    break;
+                case 3 :
+                    System.out.println("l");
+                    break;
+                case 4 :
+                    System.out.println(tm);
+                    break;
+                case 5 :
+                    System.out.println("Hasta pronto");
+                    break;
+            }
 
         } while (menu !=5);
 
