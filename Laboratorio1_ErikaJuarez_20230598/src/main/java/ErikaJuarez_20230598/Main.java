@@ -9,16 +9,17 @@ public class Main {
         TreeMap<String, Double> tm= new TreeMap<>();
         productos objtreemap = new productos();
         Scanner sc = new Scanner(System.in);
-        System.out.println("Bienvenido, que desea hacer?");
-        System.out.println("1-Ingresar");
-        System.out.println("2-Actualizar");
-        System.out.println("3-Eliminar");
-        System.out.println("4-Ver productos");
-        System.out.println("5-Salir");
-        System.out.println("Ingrese una opcion ");
+
         int menu = sc.nextInt();
 
         do {
+            System.out.println("Bienvenido, que desea hacer?");
+            System.out.println("1-Ingresar");
+            System.out.println("2-Actualizar");
+            System.out.println("3-Eliminar");
+            System.out.println("4-Ver productos");
+            System.out.println("5-Salir");
+            System.out.println("Ingrese una opcion ");
             switch (menu){
                 case 1 :
                     System.out.println("Ingresa el producto");
