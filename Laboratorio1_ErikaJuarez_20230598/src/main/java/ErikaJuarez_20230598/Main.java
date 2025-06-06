@@ -3,14 +3,15 @@ package ErikaJuarez_20230598;
 import java.util.Scanner;
 import java.util.TreeMap;
 
+import static java.awt.SystemColor.menu;
+
 public class Main {
 
     public static void main(String[] args) {
         TreeMap<String, Double> tm= new TreeMap<>();
-        productos objtreemap = new productos();
         Scanner sc = new Scanner(System.in);
 
-        int menu = sc.nextInt();
+        int menu = 0;
 
         do {
             System.out.println("Bienvenido, que desea hacer?");
@@ -20,6 +21,8 @@ public class Main {
             System.out.println("4-Ver productos");
             System.out.println("5-Salir");
             System.out.println("Ingrese una opcion ");
+            menu = sc.nextInt();
+            
             switch (menu){
                 case 1 :
                     System.out.println("Ingresa el producto");
