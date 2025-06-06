@@ -22,7 +22,7 @@ public class Main {
             System.out.println("5-Salir");
             System.out.println("Ingrese una opcion ");
             menu = sc.nextInt();
-            
+
             switch (menu){
                 case 1 :
                     System.out.println("Ingresa el producto");
@@ -36,7 +36,11 @@ public class Main {
                     System.out.println();
                     break;
                 case 3 :
-                    System.out.println("l");
+                    System.out.println("Ingrese el producto que desea elimiar:");
+                    String producto = sc.next();
+                    tm.remove(producto);
+                    System.out.println("Producto eliminado");
+                    System.out.println(tm);
                     break;
                 case 4 :
                     System.out.println(tm);
@@ -47,7 +51,5 @@ public class Main {
             }
 
         } while (menu !=5);
-
-
     }
 }
